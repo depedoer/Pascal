@@ -30,11 +30,23 @@ implementation
 { TForm1 }
 
 procedure TForm1.FormCreate(Sender: TObject);
+var
+  TAF: TATelefone;
+  TF: TTelefone;
+  I: Integer;
 begin
   Pessoa := TPessoaFisica.Create;
   Pessoa.Nome := 'Victor Zanoello';
-  //Pessoa.Telefone := ;
-  TPessoaFisica(Pessoa).CPF := '45369817848';
+  SetLength(TAF, 10);
+  for I:= 0 to 9 do
+  begin
+    TF := TTelefone.create;
+    TF.DDD := 16;
+    TF.Numero:='3761-8941';
+    TAF[I]:= TF;
+  end;
+    Pessoa.Telefone := TAF;
+  TPessoaFisica(Pessoa).CPF := '45361817848';
 end;
 
 end.
