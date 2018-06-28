@@ -16,6 +16,7 @@ type
     FTelefone: TATelefone;
   protected
     FDocumento: string;
+    FInscEsRG: String;
   public
     property Nome: string read FNome write FNome;
     property Telefone: TATelefone read FTelefone write FTelefone;

@@ -22,12 +22,18 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="1">
+    <RequiredPackages Count="3">
       <Item1>
-        <PackageName Value="LCL"/>
+        <PackageName Value="MemDSLaz"/>
       </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
     </RequiredPackages>
-    <Units Count="5">
+    <Units Count="6">
       <Unit0>
         <Filename Value="POO.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -55,6 +61,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uTelefone"/>
       </Unit4>
+      <Unit5>
+        <Filename Value="upessoa.juridica.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPessoa.Juridica"/>
+      </Unit5>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
