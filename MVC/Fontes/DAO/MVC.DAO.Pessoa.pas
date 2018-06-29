@@ -31,10 +31,21 @@ function TDAOPessoa.CadatrarPessoa: iDAOPessoa;
 begin
   Result := Self;
   FQuery.SQL.Text := FDatabaseDML.DML.CadatrarPessoa;
-
   with FQuery do
   begin
-
+    ParamByName('seqpessoa').AsInteger := FModelPessoa.Codigo;
+    ParamByName('nomerazao').AsString := FModelPessoa.Nome;
+    ParamByName('nomefantasia').AsString := FModelPessoa.Nome;
+    ParamByName('fisicajuridica').AsString := FModelPessoa.FisicaJuridica;
+    ParamByName('cnpjcpf').AsString := FModelPessoa.Documento;
+    ParamByName('inscrestadualrg').AsString := FModelPessoa.Inscrestadualrg;
+    ParamByName('dtanascimento').AsDate := FModelPessoa.DtaNasc;
+    ParamByName('sexo').AsString := FModelPessoa.Sexo;
+    ParamByName('estadocivil').AsString := FModelPessoa.Estadocivil;
+    ParamByName('email').AsString := FModelPessoa.Email;
+    ParamByName('senha').AsString := FModelPessoa.Senha;
+    ParamByName('ativo').AsString := FModelPessoa.Ativo;
+    ExecSQL;
   end;
 
 end;

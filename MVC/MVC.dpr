@@ -12,7 +12,9 @@ uses
   MVC.DAO.Pessoa in 'Fontes\DAO\MVC.DAO.Pessoa.pas',
   MVC.DAO.PessoaDML in 'Fontes\DAO\MVC.DAO.PessoaDML.pas',
   MVC.Connection.Interfaces.Connection in 'Fontes\Connection\Interfaces\MVC.Connection.Interfaces.Connection.pas',
-  MVC.Connection in 'Fontes\Connection\MVC.Connection.pas';
+  MVC.Connection in 'Fontes\Connection\MVC.Connection.pas',
+  MVC.Connection.Helper in 'Fontes\Connection\MVC.Connection.Helper.pas',
+  MVC.Connection.Oracle in 'Fontes\Connection\MVC.Connection.Oracle.pas';
 
 {$R *.res}
 
