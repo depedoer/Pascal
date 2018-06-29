@@ -6,11 +6,14 @@
     <General>
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
-      <Title Value="POO"/>
+      <Title Value="InterfaceExample"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
       <Icon Value="0"/>
     </General>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>
     </BuildModes>
@@ -22,57 +25,48 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="3">
+    <RequiredPackages Count="2">
       <Item1>
-        <PackageName Value="MemDSLaz"/>
+        <PackageName Value="zcomponent"/>
       </Item1>
       <Item2>
-        <PackageName Value="FCL"/>
-      </Item2>
-      <Item3>
         <PackageName Value="LCL"/>
-      </Item3>
+      </Item2>
     </RequiredPackages>
-    <Units Count="6">
+    <Units Count="5">
       <Unit0>
-        <Filename Value="POO.lpr"/>
+        <Filename Value="InterfaceExample.lpr"/>
         <IsPartOfProject Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="umain.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
-        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMain"/>
       </Unit1>
       <Unit2>
+        <Filename Value="upessoa.interfaces.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPessoa.Interfaces"/>
+      </Unit2>
+      <Unit3>
         <Filename Value="upessoa.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uPessoa"/>
-      </Unit2>
-      <Unit3>
-        <Filename Value="upessoa.fisica.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="uPessoa.Fisica"/>
       </Unit3>
       <Unit4>
-        <Filename Value="utelefone.pas"/>
+        <Filename Value="udatabase.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="uTelefone"/>
+        <UnitName Value="uDatabase"/>
       </Unit4>
-      <Unit5>
-        <Filename Value="upessoa.juridica.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="uPessoa.Juridica"/>
-      </Unit5>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="POO"/>
+      <Filename Value="InterfaceExample"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

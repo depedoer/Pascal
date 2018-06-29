@@ -1,4 +1,4 @@
-program POO;
+program InterfaceExample;
 
 {$mode objfpc}{$H+}
 
@@ -7,7 +7,7 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, memdslaz, uMain, uPessoa, uPessoa.Fisica, uTelefone, uPessoa.Juridica
+  Forms, zcomponent, uMain, uPessoa.Interfaces, uPessoa, uDatabase
   { you can add units after this };
 
 {$R *.res}
