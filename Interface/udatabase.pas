@@ -17,6 +17,7 @@ type
     FQuery: TZQuery;
   public
     constructor Create;
+    class function New: TDatabase;
     property Query: TZQuery read FQuery write FQuery;
   end;
 
@@ -34,9 +35,14 @@ begin
     User := 'C5TESTE';
     Password := 'consinco';
     Database := 'PDV';
-    Connect := True;
+    //Connect := True;
   end;
   FQuery.Connection := FConnection;
+end;
+
+class function TDatabase.New: TDatabase;
+begin
+  Result := Self.Create;
 end;
 
 end.
